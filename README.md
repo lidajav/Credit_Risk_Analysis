@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project uses different techniques to train and avaluate models with unblanced classes using credit card dataset.
+This project uses different techniques to train and evaluate models with unblanced classes using credit card dataset.
 In this analysis we use the following models for our evaluation:
 
 - Oversampling ( RandomOverSampler and SMOTE algorithms)
