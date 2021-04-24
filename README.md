@@ -13,50 +13,74 @@ In this analysis we use the following models for our evaluation:
 
 ## Result
 
-- **RandomOverSampler Model:**
+**RandomOverSampler Model:**
 
-The accuracy score for this model is 63.75%. The average precision and recall is 99% and 67%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 1%, same as f1 score at  2% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk (5720).The recall for high risk is 61%.
+- Balanced Accuracy score: 63.75%
+- Precision for high risk: 1%
+- Recall for high risk: 61%
+
+The average precision and recall is 99% and 67%. Below is the confusion matrix and classification reports for this model. The f1 score is 79%. The number of false positive or low risk creit cards that predicted high risk  is 5720.
 
 ![Confusion matrix](Naive_ran_samp_cm.png)
 
 ![Classification Report](Naive_ran_samp_report.png)
 
-- **SMOTE Oversamling:**
+**SMOTE Oversamling:**
 
-The accuracy for this model is 64.70%.The average precision and recall is 99% and 64%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 1%, same as f1 score at 2% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk (6184).The recall for high risk is 66%.
+- Balanced Accuracy score: 64.70%
+- Precision for high risk: 1%
+- Recall for high risk: 66%
+
+The average precision and recall is 99% and 64%. Below is the confusion matrix and classification reports for this model. The f1 score at 77% for this class. The number of false positive or low risk creit cards that predicted high risk  is 6184.
 
 ![Confusion matrix](Smote_cm.png)
 
 ![Classification Report](Smote_report.png)
 
-- **Undersampling:**
+**Undersampling:**
 
-The accuracy score for this model is 52.96%. The average precision and recall is 99% and 45%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 1%, same as f1 score at 1% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk (9416).The recall for high risk is 61%. 
+- Balanced Accuracy score: 52.96%
+- Precision for high risk: 1%
+- Recall for high risk: 61%
+
+The average precision and recall is 99% and 45%. Below is the confusion matrix and classification reports for this model. The f1 score is 62% . The number of false positive or low risk creit cards that predicted high risk  is 9416. 
 
 ![Confusion matrix](Undersampling_cm.png)
 
 ![Classification Report](Undersampling_report.png)
 
 
-- **Combination (Over and Under) Sampling:**
+**Combination (Over and Under) Sampling:**
 
-The accuracy for this model is 64.04%.The average precision and recall is 99% and 58%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 1%, same as f1 score at 2% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk(7194).The recall for high risk is 70%.
+- Balanced Accuracy score: 64.04%
+- Precision for high risk: 1%
+- Recall for high risk: 70%
+
+The average precision and recall is 99% and 58%. Below is the confusion matrix and classification reports for this model. The f1 score is 73%. The number of false positive or low risk creit cards that predicted high risk  is 7194.
 
 ![Confusion matrix](Combination_cm.png)
 
 ![Classification Report](Combination_report.png)
 
-- **Balanced Random Forest Classifier:**
+**Balanced Random Forest Classifier:**
 
-The accuracy for this model is 80.30%.The average precision and recall was 99% and 90%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 4%, same as f1 score at 7% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk (1630).The recall for high risk is 70%.
+- Balanced Accuracy score: 80.30%
+- Precision for high risk: 4%
+- Recall for high risk: 70%
+
+The average precision and recall was 99% and 90%. Below is the confusion matrix and classification reports for this model. The f1 score is 94% . The number of false positive or low risk creit cards that predicted high risk  is 1630.
 
 ![Confusion matrix](Balanced_ran_cm.png)
 
 ![Classification Report](Balanced_ran_report.png)
 
-- **Easy Ensemble AdaBoost Classifier:**
+**Easy Ensemble AdaBoost Classifier:**
 
-The accuracy for this model is 92.54%.The average precision and recall was 99% and 94%. Below is the confusion matrix and classification reports for this model. The precison for high risk is low at 7%, same as f1 score at 14% for this class. That means we have a large number of false positive or large number of low risk creit cards that predicted high risk (979).The recall for high risk is 91%.
+- Balanced Accuracy score: 92.54%
+- Precision for high risk: 7%
+- Recall for high risk: 91%
+
+The average precision and recall was 99% and 94%. Below is the confusion matrix and classification reports for this model. The f1 score is 97%. The number of false positive or low risk creit cards that predicted high risk  is 979.
 
 ![Confusion matrix](Adaboost_cm.png)
 
@@ -65,4 +89,4 @@ The accuracy for this model is 92.54%.The average precision and recall was 99% a
 
 ## Summary
 
-For this perticular analysis we are looking for lowers number of False Negative for high risks. In oter words we want to have a lower number of high risk that were predicted as low risk. Having said that, we want to look at higher percentage of recall with a good higher accuracy. Out of all models, The Easy Ensemle AdaBoost has the highest accuracy score at 92.54% and the least false negative for high risk along with the highest recall percentage (%70) for high risk credit cards. 
+For this perticular analysis we are looking for lowers number of False Negative on high risk credit cards. In oter words we are looking for a lower number of high risk credit cards that were predicted low risk. Having said that, we need to look at higher percentage of recall for high ris with a good accuracy. Out of all models, The Easy Ensemle AdaBoost has the highest accuracy score at 92.54% and the least false negative for high risk along with the highest recall percentage (%70). From the point of safety , Easy Ensemble model is the one to choose, , however 979 or 6% of low risk credit cards were falsely predicted high risk and that would be lost opporunities for the credit card company or bank.    
