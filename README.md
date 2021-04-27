@@ -21,9 +21,9 @@ In this analysis we use the following models for our evaluation:
 
 The average precision and recall is 99% and 67%. Below is the confusion matrix and classification reports for this model. The f1 score is 79%. The number of false positive or low risk creit cards that predicted high risk  is 5720.
 
-![Confusion matrix](Naive_ran_samp_cm.png)
+![Confusion matrix](Pictures/Naive_ran_samp_cm.png)
 
-![Classification Report](Naive_ran_samp_report.png)
+![Classification Report](Pictures/Naive_ran_samp_report.png)
 
 **SMOTE Oversamling:**
 
@@ -33,9 +33,9 @@ The average precision and recall is 99% and 67%. Below is the confusion matrix a
 
 The average precision and recall is 99% and 64%. Below is the confusion matrix and classification reports for this model. The f1 score at 77% for this class. The number of false positive or low risk creit cards that predicted high risk  is 6184.
 
-![Confusion matrix](Smote_cm.png)
+![Confusion matrix](Pictures/Smote_cm.png)
 
-![Classification Report](Smote_report.png)
+![Classification Report](Pictures/Smote_report.png)
 
 **Undersampling:**
 
@@ -45,9 +45,9 @@ The average precision and recall is 99% and 64%. Below is the confusion matrix a
 
 The average precision and recall is 99% and 45%. Below is the confusion matrix and classification reports for this model. The f1 score is 62% . The number of false positive or low risk creit cards that predicted high risk  is 9416. 
 
-![Confusion matrix](Undersampling_cm.png)
+![Confusion matrix](Pictures/Undersampling_cm.png)
 
-![Classification Report](Undersampling_report.png)
+![Classification Report](Pictures/Undersampling_report.png)
 
 
 **Combination (Over and Under) Sampling:**
@@ -58,9 +58,9 @@ The average precision and recall is 99% and 45%. Below is the confusion matrix a
 
 The average precision and recall is 99% and 58%. Below is the confusion matrix and classification reports for this model. The f1 score is 73%. The number of false positive or low risk creit cards that predicted high risk  is 7194.
 
-![Confusion matrix](Combination_cm.png)
+![Confusion matrix](Pictures/Combination_cm.png)
 
-![Classification Report](Combination_report.png)
+![Classification Report](Pictures/Combination_report.png)
 
 **Balanced Random Forest Classifier:**
 
@@ -70,9 +70,9 @@ The average precision and recall is 99% and 58%. Below is the confusion matrix a
 
 The average precision and recall was 99% and 90%. Below is the confusion matrix and classification reports for this model. The f1 score is 94% . The number of false positive or low risk creit cards that predicted high risk  is 1630.
 
-![Confusion matrix](Balanced_ran_cm.png)
+![Confusion matrix](Pictures/Balanced_ran_cm.png)
 
-![Classification Report](Balanced_ran_report.png)
+![Classification Report](Pictures/Balanced_ran_report.png)
 
 **Easy Ensemble AdaBoost Classifier:**
 
@@ -82,9 +82,9 @@ The average precision and recall was 99% and 90%. Below is the confusion matrix 
 
 The average precision and recall was 99% and 94%. Below is the confusion matrix and classification reports for this model. The f1 score is 97%. The number of false positive or low risk creit cards that predicted high risk  is 979.
 
-![Confusion matrix](Adaboost_cm.png)
+![Confusion matrix](Pictures/Adaboost_cm.png)
 
-![Classification Report](Adaboost_report.png)
+![Classification Report](Pictures/Adaboost_report.png)
 
 
 ## Summary
