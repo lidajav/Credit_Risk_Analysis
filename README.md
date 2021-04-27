@@ -19,8 +19,6 @@ In this analysis we use the following models for our evaluation:
 - Precision for high risk: 1%
 - Recall for high risk: 61%
 
-The average precision and recall is 99% and 67%. Below is the confusion matrix and classification reports for this model. The f1 score is 79%. The number of false positive or low risk creit cards that predicted high risk  is 5720.
-
 
 The average precision and recall is 99% and 67%. Below is the confusion matrix and classification reports for this model. The f1 score is 79%. The number of false positive or low risk creit cards that predicted high risk  is 5720.
 
@@ -36,11 +34,6 @@ The average precision and recall is 99% and 67%. Below is the confusion matrix a
 
 The average precision and recall is 99% and 64%. Below is the confusion matrix and classification reports for this model. The f1 score at 77% for this class. The number of false positive or low risk creit cards that predicted high risk  is 6184.
 
-- Balanced Accuracy score: 64.70%
-- Precision for high risk: 1%
-- Recall for high risk: 66%
-
-The average precision and recall is 99% and 64%. Below is the confusion matrix and classification reports for this model. The f1 score at 77% for this class. The number of false positive or low risk creit cards that predicted high risk  is 6184.
 
 ![Confusion matrix](Pictures/Smote_cm.png)
 
@@ -69,6 +62,11 @@ The average precision and recall is 99% and 45%. Below is the confusion matrix a
 
 The average precision and recall is 99% and 58%. Below is the confusion matrix and classification reports for this model. The f1 score is 73%. The number of false positive or low risk creit cards that predicted high risk  is 7194.
 
+![Confusion matrix](Pictures/Combination_cm.png)
+
+![Classification Report](Pictures/Combination_report.png)
+
+
 **Balanced Random Forest Classifier:**
 
 - Balanced Accuracy score: 80.30%
@@ -78,9 +76,9 @@ The average precision and recall is 99% and 58%. Below is the confusion matrix a
 The average precision and recall was 99% and 90%. Below is the confusion matrix and classification reports for this model. The f1 score is 94% . The number of false positive or low risk creit cards that predicted high risk  is 1630.
 
 
-![Confusion matrix](Pictures/Combination_cm.png)
+![Confusion matrix](Pictures/Balanced_ran_cm.png)
 
-![Classification Report](Pictures/Combination_report.png)
+![Classification Report](Pictures/Balanced_ran_report.png)
 
 
 **Easy Ensemble AdaBoost Classifier:**
